@@ -1,0 +1,119 @@
+.book_info{
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.books_elem_img_box{
+    position: relative;
+    /*width: 166px;*/
+    /*height: 256px;*/
+
+    width: 115px;
+    height: 178px;
+    margin: 0 25px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.books_elem_img{
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+    /*width: 151px;*/
+    /*height: 238px;*/
+    width: 104px;
+    height: 165px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.book_info_left{
+    align-items: flex-start;
+}
+
+.book_info_text{
+    width: 250px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.black_book{
+    background-image: url('/imgs/books/book_outline_black.png');
+}
+
+
+
+
+
+.book_info_buttons button{
+    width: 200px;
+}
+
+.book_info_buttons a:last-child button{
+    background: linear-gradient(0deg, #9f0000, #d00000) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.links_to_functions{
+    width: 100%;
+    padding: 10px 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+
+    margin-bottom: 35px;
+}
+
+
+
+
+.button2{
+    text-align: center;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 10px 0;
+    font-weight: 600;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), transparent);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+    transition: 0.2s all ease-in-out;
+}
+
+.button2:hover{
+    background-color: #f3f3f3;
+}
+
+.button2 ion-icon{
+    font-size: 26px;
+    margin-right: 15px;
+}
+
+.active{
+    color: white;
+    background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.7));
+}

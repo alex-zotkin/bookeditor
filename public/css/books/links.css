@@ -1,0 +1,172 @@
+.links{
+    padding-bottom: 35px !important;
+    height: calc(100% - 400px) !important;
+
+    justify-content: space-between;
+}
+
+.settings_box{
+    width: 40%;
+    height: 100%;
+
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+#canvas{
+    position: relative;
+    width: 60%;
+    height: 100%;
+
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+}
+
+.link_ul{
+    position: relative;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    width: 90%;
+    height: 45%;
+
+    overflow: auto;
+
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+}
+
+.link_ul input{
+    margin: 0;
+}
+
+.link_ul input[type='text']{
+    width: 70%;
+}
+
+.links_ul_top{
+    background: white !important;
+    margin-bottom: 30px;
+}
+
+.link_ul li{
+    /*border-radius: var(--border-radius);*/
+    width: 100%;
+    padding: 5px 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link_ul li ion-icon{
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.link_ul li button{
+    margin: 0;
+}
+
+.link_ul li:nth-child(n){
+    background: #f8f8f8;
+}
+
+.link_ul li:nth-child(2n){
+    background: #eaeaea;
+}
+
+.link_ul li p{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    backdrop-filter: blur(5px);
+}
+
+
+.loader img{
+    width: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.relation{
+    justify-content: space-around;
+    padding: 20px 15px !important;
+    /*margin-bottom: 10px;*/
+}
+
+.relation_info{
+    width: 80%;
+    padding: 0 20px;
+    justify-content: space-around;
+}
+
+.relation p{
+    text-align: center;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.relations_box select{
+    max-width: 120px !important;
+}
+
+.relation_character{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 1000px;
+    background-size: cover;
+}
+
+.relation_color{
+    margin-top: -20px;
+    width: 100%;
+}
+
+.relation_color h4{
+    margin: 0;
+}
+
+.relation_color span{
+    width: 100%;
+    margin-top: 5px;
+    height: 3px;
+}

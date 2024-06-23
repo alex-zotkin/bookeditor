@@ -1,0 +1,148 @@
+#app{
+    width: 100%;
+}
+
+.book_info{
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.books_elem_img_box{
+    position: relative;
+    width: 166px;
+    height: 256px;
+    margin: 0 25px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.books_elem_img{
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+    width: 151px;
+    height: 238px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book_info_left{
+    align-items: flex-start;
+}
+
+.book_info_text{
+    width: 250px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.black_book{
+    background-image: url('/imgs/books/book_outline_black.png');
+}
+
+
+
+
+
+.book_info_buttons button{
+    width: 200px;
+}
+
+.book_info_buttons a:last-child button{
+    background-color: #d00000;
+}
+
+
+
+
+
+.chapters_list{
+    position: relative;
+}
+
+.chapter, .chapter_drop_zone{
+    width: 100%;
+    background: white;
+    margin-bottom: 25px;
+    padding: 20px 30px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    justify-content: space-between;
+
+    box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+}
+
+.chapter:hover{
+    background: rgb(246, 246, 246);
+}
+
+.chapter_left{
+    width: 100%;
+
+    justify-content: flex-start;
+}
+
+.chapter_move{
+    cursor: move;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.chapter_title h3, .chapter_drop_zone h3{
+    user-select: none;
+    margin: 3px 0 0 0;
+}
+
+.chapter_buttons{
+    width: 50px;
+
+    justify-content: flex-end;
+}
+
+.chapter_button{
+    padding: 7px;
+    font-size: 18px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    color: red;
+
+    box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+}
+
+.chapter_button:hover{
+    background: rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+.chapter--active{
+    opacity: 0.7;
+    border: 1px dashed #3766B7;
+    background: rgba(55, 102, 183, 0.1);
+}
+
+
+.form_section{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+

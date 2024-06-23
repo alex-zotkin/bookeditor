@@ -1,0 +1,83 @@
+.width{
+    align-items: flex-start;
+}
+
+.books{
+    width: 100%;
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    row-gap: 60px ;
+}
+
+.books_elem{
+    cursor: pointer;
+}
+
+.books_elem:hover .books_elem_img_box{
+    transform: translateY(-15px);
+}
+
+.books_elem_img_box{
+    position: relative;
+    width: 280px;
+    height: 421px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.black_book{
+    background-image: url('/imgs/books/book_outline_black.png');
+}
+
+.blue_book{
+    background-image: url('/imgs/books/book_outline_blue.png');
+}
+
+.books_elem_img{
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+    width: 258px;
+    height: 401px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.books_elem_img ion-icon{
+    color: var(--blue);
+    font-size: 90px;
+}
+
+
+
+
+
+
+
+
+
+.books_elem_title{
+    margin: 20px 0 6px 0;
+    line-height: 28px;
+    font-size: 20px;
+    width: 60%;
+}
+
+
+
+
+
+.books_elem button, .books_elem input{
+    width: 280px;
+}
